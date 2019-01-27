@@ -1,4 +1,4 @@
 {:logging {
    :level :debug
-   :nss [cmr]
+   :nss [clojusc]
    :color true}}

@@ -1,18 +1,17 @@
 (ns clojusc.config.unified.config
   (:require
    [clojure.string :as string]
-   [clojusc.config.unified.file :as file]
    [clojusc.config.unified.util :as util]
    [environ.core :as environ]
    [taoensso.timbre :as log]))
 
-(def config-file "config/cmr-exchange-common/config.edn")
+(def config-file "config/clojusc-unified-config/config.edn")
 
 (defn base-data
   ([]
     (base-data config-file))
   ([filename]
-    (file/read-edn-resource filename)))
+    (util/read-edn-resource filename)))
 
 (defn parse-kv
   [k v splitter-regex]
