@@ -43,8 +43,8 @@ Distributed under the Apache License, Version 2.0.
 [tag-badge]: https://img.shields.io/github/tag/clojusc/unified-config.svg
 [tag]: https://github.com/clojusc/unified-config/tags
 [clojure-v]: https://img.shields.io/badge/clojure-1.9.0-blue.svg
-[clojars]: https://clojars.org/gov.nasa.earthdata/unified-config
-[clojars-badge]: https://img.shields.io/clojars/v/gov.nasa.earthdata/unified-config.svg
+[clojars]: https://clojars.org/clojusc/unified-config
+[clojars-badge]: https://img.shields.io/clojars/v/clojusc/unified-config.svg
 [security-scan-badge]: https://img.shields.io/badge/nvd%2Fsecurity%20scan-passing-brightgreen.svg
 [prs]: https://github.com/pulls?utf8=%E2%9C%93&q=is%3Aopen+is%3Apr+org%3Aclojusc%3Afalse+
 [prs-badge]: https://img.shields.io/badge/Open%20PRs-org-yellow.svg
