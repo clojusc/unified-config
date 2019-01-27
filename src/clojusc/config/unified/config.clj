@@ -1,8 +1,8 @@
-(ns cmr.exchange.common.config
+(ns clojusc.config.unified.config
   (:require
    [clojure.string :as string]
-   [cmr.exchange.common.file :as file]
-   [cmr.exchange.common.util :as util]
+   [clojusc.config.unified.file :as file]
+   [clojusc.config.unified.util :as util]
    [environ.core :as environ]
    [taoensso.timbre :as log]))
 

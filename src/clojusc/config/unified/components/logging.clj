@@ -1,7 +1,7 @@
-(ns cmr.exchange.common.components.logging
+(ns clojusc.config.unified.components.logging
   (:require
     [clojusc.twig :as logger]
-    [cmr.exchange.common.components.config :as config]
+    [clojusc.config.unified.components.config :as config]
     [com.stuartsierra.component :as component]
     [taoensso.timbre :as log]))
 

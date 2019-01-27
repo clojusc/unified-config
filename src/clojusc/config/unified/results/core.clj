@@ -1,4 +1,4 @@
-(ns cmr.exchange.common.results.core
+(ns clojusc.config.unified.results.core
   (:require
     [clojusc.results.core :as core]))
 
@@ -21,7 +21,7 @@
             ;; paging, etc.
             :hits (count results)
             :took elapsed
-            :request-id request-id 
+            :request-id request-id
             :items results}
            warnings)))
 

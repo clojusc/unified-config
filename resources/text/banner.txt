@@ -1,12 +1,16 @@
 
 
- __________ ___   ___ _________
-/   /_____/|   \ /   |    _o___)  common utils/components used in
-\___\%%%%%'|____|____|___|\____\          NASA Earthdata projects
- `BBBBBBBB' `BBBBBBB' `BB' `BBB'
-             _                     _
- ___ _ _ ___| |_ ___ ___ ___ ___  / |___ ___ _____ _____ ___ ___
-| -_|_'_|  _|   | .'|   | . | -_|/ /|  _| . |     |     | . |   |
-|___|_,_|___|_|_|__,|_|_|_  |___|_/ |___|___|_|_|_|_|_|_|___|_|_|
-                        |___|
+Clojure-Aided Enrichment Center's
+
+         _ ___ _       _                 ___ _
+ _ _ ___|_|  _|_|___ _| |___ ___ ___ ___|  _|_|___
+| | |   | |  _| | -_| . |___|  _| . |   |  _| | . |
+|___|_|_|_|_| |_|___|___|   |___|___|_|_|_| |_|_  |
+                                              |___|
+
+
+"To be honest, we're throwing science at the wall here to see what sticks.
+No idea what it'll do. Probably nothing."
+
+-- Cave Johnson
 

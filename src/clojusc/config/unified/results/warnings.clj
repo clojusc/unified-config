@@ -1,4 +1,4 @@
-(ns cmr.exchange.common.results.warnings
+(ns clojusc.config.unified.results.warnings
   (:require
    [clojusc.results.warnings :as warnings]))
 

@@ -1,4 +1,4 @@
-(ns cmr.exchange.common.results.errors
+(ns clojusc.config.unified.results.errors
   (:require
    [clojusc.results.errors :as errors]
    [clojusc.results.util :as util]))

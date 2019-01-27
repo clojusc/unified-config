@@ -14,18 +14,24 @@
        ns
        "\u001B[35m]\u001B[33m λ\u001B[m=> "))
 
-(defproject gov.nasa.earthdata/cmr-exchange-common "0.3.1-SNAPSHOT"
-  :description "Cross-project functionality, utilities, and general-use components"
-  :url "https://github.com/cmr-exchange/cmr-exchange-common"
+(defproject clojusc/unified-config "0.4.0-SNAPSHOT"
+  :description "Unifies configruation from the environment, Java system properties, and/or edn files"
+  :url "https://github.com/clojusc/unified-config"
   :license {
     :name "Apache License, Version 2.0"
     :url "http://www.apache.org/licenses/LICENSE-2.0"}
+  :exclusions [
+    [args4j]
+    [io.aviso/pretty]]
   :dependencies [
+    [args4j "2.33"]
     [clojusc/results "0.1.0"]
     [clojusc/trifl "0.4.2"]
-    [clojusc/twig "0.4.0"]
+    [clojusc/twig "0.4.1"]
     [environ "1.1.0"]
-    [org.clojure/clojure "1.9.0"]]
+    [io.aviso/pretty "0.1.36"]
+    [org.clojure/clojure "1.10.0"]
+    [org.clojure/core.rrb-vector "0.0.13"]]
   :aot [clojure.tools.logging.impl]
   :profiles {
     :ubercompile {
@@ -33,7 +39,7 @@
       :source-paths ["test"]}
     :security {
       :plugins [
-        [lein-nvd "0.5.6"]]
+        [lein-nvd "0.6.0"]]
       :source-paths ^:replace ["src"]
       :nvd {
         :suppression-file "resources/security/false-positives.xml"}
@@ -45,20 +51,21 @@
       :dependencies [
         [clojusc/system-manager "0.3.0"]
         [org.clojure/java.classpath "0.3.0"]
-        [org.clojure/tools.namespace "0.2.11"]
-        [proto-repl "0.3.1"]]
+        [org.clojure/tools.namespace "0.2.11"]]
+      :middleware [
+        ultra.plugin/middleware]
       :plugins [
-        [venantius/ultra "0.5.2"]]
+        [oubiwann/venantius-ultra "0.5.4-SNAPSHOT"]]
       :source-paths ["dev-resources/src"]
       :repl-options {
-        :init-ns cmr.exchange.common.dev
+        :init-ns clojusc.config.unified.dev
         :prompt ~get-prompt
         :init ~(println (get-banner))}}
     :lint {
       :source-paths ^:replace ["src"]
       :test-paths ^:replace []
       :plugins [
-        [jonase/eastwood "0.3.4"]
+        [jonase/eastwood "0.3.5"]
         [lein-ancient "0.6.15"]
         [lein-kibit "0.1.6"]]}
     :test {
@@ -104,7 +111,7 @@
     "build" ["do"
       ["clean"]
       ["check-vers"]
-      ["check-sec"]
+      ; ["check-sec"]
       ["ltest" ":unit"]
       ["ubercompile"]
       ["build-uberjar"]]

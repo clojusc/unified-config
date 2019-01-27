@@ -1,6 +1,6 @@
-(ns cmr.exchange.common.components.config
+(ns clojusc.config.unified.components.config
   (:require
-   [cmr.exchange.common.config :as config]
+   [clojusc.config.unified.config :as config]
    [com.stuartsierra.component :as component]
    [taoensso.timbre :as log])
   (:import

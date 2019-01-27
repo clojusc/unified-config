@@ -1,4 +1,4 @@
-(ns cmr.exchange.common.file
+(ns clojusc.config.unified.file
   (:require
    [clojure.edn :as edn]
    [clojure.java.io :as io]

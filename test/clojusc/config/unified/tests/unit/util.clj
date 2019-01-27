@@ -1,8 +1,8 @@
-(ns cmr.exchange.common.tests.unit.util
+(ns clojusc.config.unified.tests.unit.util
   "Note: this namespace is exclusively for unit tests."
   (:require
     [clojure.test :refer :all]
-    [cmr.exchange.common.util :as util]))
+    [clojusc.config.unified.util :as util]))
 
 (deftest deep-merge
   (is (= {} (util/deep-merge {} {})))

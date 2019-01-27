@@ -1,7 +1,7 @@
-(ns cmr.exchange.common.components.core
+(ns clojusc.config.unified.components.core
   (:require
-    [cmr.exchange.common.components.config :as config]
-    [cmr.exchange.common.components.logging :as logging]
+    [clojusc.config.unified.components.config :as config]
+    [clojusc.config.unified.components.logging :as logging]
     [com.stuartsierra.component :as component]))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

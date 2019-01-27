@@ -1,4 +1,4 @@
-(ns cmr.exchange.common.dev
+(ns clojusc.config.unified.dev
   "CMR OPeNDAP development namespace."
   (:require
    [clojure.java.classpath :as classpath]
@@ -9,10 +9,10 @@
    [clojure.tools.namespace.repl :as repl]
    [clojusc.system-manager.core :as system-api :refer :all]
    [clojusc.twig :as logger]
-   [cmr.exchange.common.components.config :as config]
-   [cmr.exchange.common.components.core]
-   [cmr.exchange.common.file :as file]
-   [cmr.exchange.common.util :as util]
+   [clojusc.config.unified.components.config :as config]
+   [clojusc.config.unified.components.core]
+   [clojusc.config.unified.file :as file]
+   [clojusc.config.unified.util :as util]
    [com.stuartsierra.component :as component]
    [trifl.java :refer [show-methods]])
   (:import
@@ -24,8 +24,8 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (def setup-options {
-  :init 'cmr.exchange.common.components.core/init
-  :after-refresh 'cmr.exchange.common.dev/init-and-startup
+  :init 'clojusc.config.unified.components.core/init
+  :after-refresh 'clojusc.config.unified.dev/init-and-startup
   :throw-errors false})
 
 (defn init

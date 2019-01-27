@@ -1,4 +1,4 @@
-(ns cmr.exchange.common.util
+(ns clojusc.config.unified.util
   (:require
    [clojure.java.io :as io]
    [clojure.string :as string]
