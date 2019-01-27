@@ -16,7 +16,9 @@
 
 ## About
 
-TBD
+An EDN-file-based config library that allows for configuration values to
+be overridden using Java system properties (i.e, `-D...`) or shell
+environment variables.
 
 
 ## Dependencies [&#x219F;](#contents)
@@ -42,7 +44,7 @@ Distributed under the Apache License, Version 2.0.
 [deps-badge]: https://img.shields.io/badge/deps%20check-passing-brightgreen.svg
 [tag-badge]: https://img.shields.io/github/tag/clojusc/unified-config.svg
 [tag]: https://github.com/clojusc/unified-config/tags
-[clojure-v]: https://img.shields.io/badge/clojure-1.9.0-blue.svg
+[clojure-v]: https://img.shields.io/badge/clojure-1.10.0-blue.svg
 [clojars]: https://clojars.org/clojusc/unified-config
 [clojars-badge]: https://img.shields.io/clojars/v/clojusc/unified-config.svg
 [security-scan-badge]: https://img.shields.io/badge/nvd%2Fsecurity%20scan-passing-brightgreen.svg
