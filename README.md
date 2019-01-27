@@ -48,5 +48,5 @@ Distributed under the Apache License, Version 2.0.
 [clojars]: https://clojars.org/clojusc/unified-config
 [clojars-badge]: https://img.shields.io/clojars/v/clojusc/unified-config.svg
 [security-scan-badge]: https://img.shields.io/badge/nvd%2Fsecurity%20scan-passing-brightgreen.svg
-[prs]: https://github.com/pulls?utf8=%E2%9C%93&q=is%3Aopen+is%3Apr+org%3Aclojusc%3Afalse+
+[prs]: https://github.com/pulls?utf8=%E2%9C%93&q=is%3Aopen+is%3Apr+org%3Aclojusc
 [prs-badge]: https://img.shields.io/badge/Open%20PRs-org-yellow.svg
