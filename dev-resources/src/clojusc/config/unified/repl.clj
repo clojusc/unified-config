@@ -1,4 +1,4 @@
-(ns clojusc.config.unified.dev
+(ns clojusc.config.unified.repl
   "CMR OPeNDAP development namespace."
   (:require
    [clojure.java.classpath :as classpath]
@@ -11,8 +11,10 @@
    [clojusc.twig :as logger]
    [clojusc.config.unified.components.config :as config]
    [clojusc.config.unified.components.core]
+   [clojusc.config.unified.edn :as edn]
    [clojusc.config.unified.file :as file]
    [clojusc.config.unified.util :as util]
+   [clojusc.config.unified.yaml :as yaml]
    [com.stuartsierra.component :as component]
    [trifl.java :refer [show-methods]])
   (:import

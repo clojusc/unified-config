@@ -1,17 +1,8 @@
-(ns clojusc.config.unified.config
+(ns clojusc.config.unified.common
   (:require
    [clojure.string :as string]
-   [clojusc.config.unified.util :as util]
    [environ.core :as environ]
    [taoensso.timbre :as log]))
-
-(def config-file "config/clojusc-unified-config/config.edn")
-
-(defn base-data
-  ([]
-    (base-data config-file))
-  ([filename]
-    (util/read-edn-resource filename)))
 
 (defn parse-kv
   [k v splitter-regex]
@@ -67,11 +58,3 @@
        (remove nil?)
        (reduce nest-vars {})
        ((fn [x] (log/trace "env-data:" x) x))))
-
-(defn data
-  ([]
-    (data config-file))
-  ([filename]
-    (util/deep-merge (base-data filename)
-                     (props-data)
-                     (env-data))))

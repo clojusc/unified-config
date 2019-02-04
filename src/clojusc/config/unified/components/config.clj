@@ -1,6 +1,6 @@
 (ns clojusc.config.unified.components.config
   (:require
-   [clojusc.config.unified.config :as config]
+   [clojusc.config.unified.edn :as config]
    [com.stuartsierra.component :as component]
    [taoensso.timbre :as log])
   (:import

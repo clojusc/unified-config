@@ -59,7 +59,7 @@
         [oubiwann/venantius-ultra "0.5.4-SNAPSHOT"]]
       :source-paths ["dev-resources/src"]
       :repl-options {
-        :init-ns clojusc.config.unified.dev
+        :init-ns clojusc.config.unified.repl
         :prompt ~get-prompt
         :init ~(println (get-banner))}}
     :lint {

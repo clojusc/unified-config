@@ -1,6 +1,6 @@
 # unified-config
 
-*Unifies configruation from the environment, Java system properties, and/or edn files*
+*Unifies configruation from the environment, Java system properties, and/or config files*
 
 [![Build Status][travis-badge]][travis]
 [![Dependencies Status][deps-badge]][travis]
@@ -16,9 +16,13 @@
 
 ## About
 
-An EDN-file-based config library that allows for configuration values to
+An file-based config library that allows for configuration values to
 be overridden using Java system properties (i.e, `-D...`) or shell
 environment variables.
+
+Supported file types:
+* `.edn`
+* `.yml`
 
 
 ## Dependencies [&#x219F;](#contents)
