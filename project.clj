@@ -14,7 +14,7 @@
        ns
        "\u001B[35m]\u001B[33m λ\u001B[m=> "))
 
-(defproject clojusc/unified-config "0.4.0"
+(defproject clojusc/unified-config "0.5.0-SNAPSHOT"
   :description "Unifies configruation from the environment, Java system properties, and/or edn files"
   :url "https://github.com/clojusc/unified-config"
   :license {
@@ -30,6 +30,7 @@
     [clojusc/twig "0.4.1"]
     [environ "1.1.0"]
     [io.aviso/pretty "0.1.36"]
+    [io.forward/yaml "1.0.9"]
     [org.clojure/clojure "1.10.0"]
     [org.clojure/core.rrb-vector "0.0.13"]]
   :aot [clojure.tools.logging.impl]
