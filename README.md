@@ -33,9 +33,9 @@ Supported file types:
 
 ## License [&#x219F;](#contents)
 
-Copyright © 2019, Duncan McGreggor
-
 Copyright © 2018, NASA
+
+Copyright © 2019, Clojure-Aided Enrichment Center
 
 Distributed under the Apache License, Version 2.0.
 
