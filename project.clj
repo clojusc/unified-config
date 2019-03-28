@@ -14,7 +14,7 @@
        ns
        "\u001B[35m]\u001B[33m λ\u001B[m=> "))
 
-(defproject clojusc/unified-config "0.5.0"
+(defproject clojusc/unified-config "0.6.0-SNAPSHOT"
   :description "Unifies configruation from the environment, Java system properties, and/or edn files"
   :url "https://github.com/clojusc/unified-config"
   :license {
