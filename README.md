@@ -16,7 +16,7 @@
 
 ## About
 
-An file-based config library that allows for configuration values to
+A file-based config library that allows for configuration values to
 be overridden using Java system properties (i.e, `-D...`) or shell
 environment variables.
 
