@@ -29,10 +29,10 @@
     [clojusc/trifl "0.4.2"]
     [clojusc/twig "0.4.1"]
     [environ "1.1.0"]
-    [io.aviso/pretty "0.1.36"]
+    [io.aviso/pretty "0.1.37"]
     [io.forward/yaml "1.0.9"]
     [org.clojure/clojure "1.10.0"]
-    [org.clojure/core.rrb-vector "0.0.13"]]
+    [org.clojure/core.rrb-vector "0.0.14"]]
   :aot [clojure.tools.logging.impl]
   :profiles {
     :ubercompile {
@@ -40,7 +40,7 @@
       :source-paths ["test"]}
     :security {
       :plugins [
-        [lein-nvd "0.6.0"]]
+        [lein-nvd "1.0.0"]]
       :source-paths ^:replace ["src"]
       :nvd {
         :suppression-file "resources/security/false-positives.xml"}
