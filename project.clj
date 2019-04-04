@@ -22,7 +22,8 @@
     :url "http://www.apache.org/licenses/LICENSE-2.0"}
   :exclusions [
     [args4j]
-    [io.aviso/pretty]]
+    [io.aviso/pretty]
+    [org.flatland/ordered]]
   :dependencies [
     [args4j "2.33"]
     [clojusc/results "0.1.0"]
@@ -32,7 +33,8 @@
     [io.aviso/pretty "0.1.37"]
     [io.forward/yaml "1.0.9"]
     [org.clojure/clojure "1.10.0"]
-    [org.clojure/core.rrb-vector "0.0.14"]]
+    [org.clojure/core.rrb-vector "0.0.14"]
+    [org.flatland/ordered "1.5.7"]]
   :aot [clojure.tools.logging.impl]
   :profiles {
     :ubercompile {
